@@ -4,11 +4,11 @@ angular.module('ucsalApp')
 
   // dados cadastrais mockados, separados pela matricula
   var dadosAlunos = {
-    '20261001': {
-      nome: 'Beatriz Cardozo de Oliveira',
-      matricula: '20261001',
+    '200024366': {
+      nome: 'Cauan Guimarães Silva',
+      matricula: '200024366',
       curso: 'Engenharia de Software',
-      email: 'beatriz@email.com',
+      email: 'cauan@email.com',
       telefone: '(71) 99999-0000',
       cep: '41740-090',
       rua: 'Av. Prof. Pinto de Aguiar, 2589',

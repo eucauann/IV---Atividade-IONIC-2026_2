@@ -4,7 +4,7 @@ angular.module('ucsalApp')
 
   // alunos mockados (login)
   var alunos = [
-    { matricula: '20261001', senha: '123456' },
+    { matricula: '200024366', senha: '123456' },
     { matricula: '20261002', senha: 'ucsal123' }
   ];
 

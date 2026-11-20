@@ -12,7 +12,7 @@ Depois é só abrir a porta 8080 no navegador (no Codespaces aparece na aba "Por
 
 ## Login de teste
 
-- Matrícula: 20261001
+- Matrícula: 200024366
 - Senha: 123456
 
 ## Estrutura
