@@ -1,0 +1,15 @@
+<ion-view view-title="{{ noticia.categoria }}">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-image">
+        <img ng-src="{{ noticia.imagem }}">
+      </div>
+      <div class="item item-text-wrap">
+        <h2>{{ noticia.titulo }}</h2>
+        <p>{{ noticia.data }}</p>
+        <br>
+        <p>{{ noticia.texto }}</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

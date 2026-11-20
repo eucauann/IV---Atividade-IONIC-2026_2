@@ -1,0 +1,28 @@
+<ion-view view-title="Mural UCSal">
+  <ion-content>
+
+    <!-- filtro por categoria -->
+    <div class="button-bar padding">
+      <a class="button button-small" ng-class="{'button-ucsal': categoria == ''}" ng-click="filtrar('')">Todos</a>
+      <a class="button button-small" ng-class="{'button-ucsal': categoria == 'Notícia'}" ng-click="filtrar('Notícia')">Notícias</a>
+      <a class="button button-small" ng-class="{'button-ucsal': categoria == 'Evento'}" ng-click="filtrar('Evento')">Eventos</a>
+    </div>
+
+    <div class="list card" ng-repeat="n in noticias | filter:{categoria: categoria}">
+      <div class="item">
+        <h2>{{ n.titulo }}</h2>
+        <p>{{ n.data }}</p>
+        <span class="badge" ng-class="n.categoria == 'Evento' ? 'badge-positive' : 'badge-ucsal'">
+          {{ n.categoria }}
+        </span>
+      </div>
+      <div class="item item-image">
+        <img ng-src="{{ n.imagem }}">
+      </div>
+      <div class="item">
+        <button class="button button-small button-ucsal" ng-click="lerMais(n.id)">Ler mais</button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
