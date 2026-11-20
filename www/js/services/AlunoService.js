@@ -8,7 +8,7 @@ angular.module('ucsalApp')
       nome: 'Cauan Guimarães Silva',
       matricula: '200024366',
       curso: 'Engenharia de Software',
-      email: 'cauan@email.com',
+      email: 'cauan.guimaraes@ucsal.edu.br',
       telefone: '(71) 99999-0000',
       cep: '41740-090',
       rua: 'Av. Prof. Pinto de Aguiar, 2589',
