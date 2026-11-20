@@ -28,19 +28,18 @@ angular.module('ucsalApp')
     }
   };
 
-  // se ja tiver algo salvo no localStorage, usa
-  var salvo = localStorage.getItem('dadosAlunos');
-  if (salvo) {
-    dadosAlunos = JSON.parse(salvo);
-  }
-
   this.getDados = function(matricula) {
+    // se ja tiver algo salvo no localStorage, usa
+    var salvo = localStorage.getItem('aluno_' + matricula);
+    if (salvo) {
+      return JSON.parse(salvo);
+    }
     // devolve uma copia pra so alterar quando clicar em salvar
     return angular.copy(dadosAlunos[matricula]);
   };
 
   this.salvar = function(aluno) {
     dadosAlunos[aluno.matricula] = aluno;
-    localStorage.setItem('dadosAlunos', JSON.stringify(dadosAlunos));
+    localStorage.setItem('aluno_' + aluno.matricula, JSON.stringify(aluno));
   };
 });

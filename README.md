@@ -5,7 +5,7 @@ Protótipo em Ionic 1 + AngularJS para a atividade de Programação Mobile.
 ## Como rodar
 
 ```bash
-npx http-server www -p 8080
+npx http-server www -p 8080 -c-1
 ```
 
 Depois é só abrir a porta 8080 no navegador (no Codespaces aparece na aba "Ports").

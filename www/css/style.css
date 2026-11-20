@@ -53,3 +53,9 @@
   font-weight: bold;
   color: var(--azul-marinho) !important;
 }
+
+/* imagem dos cards nao ficar gigante */
+.item-image img {
+  height: 200px;
+  object-fit: cover;
+}
